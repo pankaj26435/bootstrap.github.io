@@ -456,8 +456,9 @@ h2.title {
 
 .claimBook {
     position: relative;
-    display: block;
-    background: url(../images/claimBook-bg.png);    
+    display: block;    
+    background: url(../images/claimbook-bg.png);
+    /* background: url(../images/claimbook-bg-upper.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
