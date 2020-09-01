@@ -1,0 +1,752 @@
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Bitter', serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Bitter', serif;
+}
+
+p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+/*-- header --*/
+
+/* header */
+/* navigation */
+.cust_nav { 
+    width: 100%;
+}
+
+/* CSS Document */
+.toggle-2,
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+.cust_header {
+    background: #e33e42;
+    padding: 2.5em 0;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    z-index: 99;
+}
+
+/* logo */
+h1.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h1.logo a:hover { opacity: 1; }
+
+
+
+/* //logo */
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+/* Styling the links */
+nav a {
+    color: #fff;
+    font-size: 15px ;   
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+ul.menu li {
+    width: auto;
+    text-align: center;
+    padding: 20px 28px;
+}
+
+ul.menu li:nth-child(3) {
+    margin-right: 10%;
+}
+
+nav ul li ul li a:hover {
+    background: #f8f9fa;
+    color: #FF5722;
+}
+
+
+/* Background color change on Hover */
+
+.menu li.active a,
+.menu li a:hover {
+    color: #396189;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    top: 50px;
+    z-index: 9;
+    position: absolute;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+a.reqe-button {
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px;
+}
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width : 992px) {
+    .header-style {
+        padding: 10px 0;
+    }
+
+    .logo a {
+        font-size: 45px;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle.toogle-2 {
+        display: block;
+        padding: 0.5em 1.2em;
+        font-size: 16px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        background-color: #444343;
+        color: #fff;
+        border-radius: 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        /* margin-top: 8px; */
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .toggle.toogle-2:hover {
+        background: #ff4c4c;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+    .toggle.toggle-drop {
+        float: none;
+        text-align: center;
+        margin: auto;
+        max-width: 400px;
+        padding: 5px;
+        color: #000;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+    .toggle.toggle-drop:hover {
+        color: #FF5722;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+    ul.menu li {
+        margin: 0 !important;
+    }
+
+    ul.menu li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+        background: #f7f7f7;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        border-bottom: 2px solid #e33e42;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+    .menu li.active a,
+    .menu li a:hover {
+        color: #000;
+    }
+
+    nav a {
+        color: #000;
+        font-size: 15px;
+    }
+
+    .menu li.active a,
+    .menu li a:hover {
+        color: #FF5722;
+    }
+
+    nav ul ul li a {
+        color: #000;
+    }
+    ul.menu {
+        position: absolute;
+        left: 0;
+        top: 114px;
+        transition: 0.5s all;
+    }
+    .cust_header {
+        padding: 1em 0;
+    }
+
+}
+/* //navigation */
+/*-- //header --*/
+
+/*top-ira*/
+.free-book-reveals { 
+    text-decoration: underline;
+    color: #000;
+    font-size: 18px;
+    line-height: 42px;
+ }
+ h1.title {
+    font-size: 36px;
+    line-height: 42px;
+ }
+ h1.title span{
+    color: #e33e42;
+ }
+ .banner ul li {
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+}
+.banner ul li:before {
+    content: "\f0a9";
+    position: absolute;
+    font-family: fontAwesome;
+    display: inline-block;
+    left: 0;
+    color: #376086;
+    font-size: 18px;
+}
+.banner {
+    display: block;
+    position: relative;
+}
+.banner:after {
+    content: url(../images/red-arrow.png);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.top-ira {
+    position: relative;
+    display: block;
+    background: url(../images/claimbook-bg-upper.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 320px!important;
+    margin-bottom: -100px;
+}
+
+/*-- //Top Ira --*/
+
+/*ClaimBook*/
+h2.title {
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-upper {
+    background-color: #e33e42;
+    position: relative;
+    padding: 20px;
+}
+.claimBook form {
+    padding: 30px 25px;
+    background: #fff;
+}
+
+.claimBook {
+    position: relative;
+    display: block;
+    background: url(../images/claimBook-bg.png);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-top: 100px;
+}
+.claimBook form input::placeholder {
+    font-size: 14px;
+    line-height: 26px;
+    color: #606060;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.claimBook .form-control {
+    border: 0;
+    background-color: #ededed;    
+    padding: 18px 20px;
+}
+.claimBook .form-control:focus { 
+    box-shadow: none;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: 100%!important;
+}
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding-right: 24px; 
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') 96% 50% no-repeat; 
+} /* change or remove #fff color if not needed */
+.claimBook .form {
+    margin-top: -100px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+button[type=submit] {
+    background-color: #42b99f!important;
+    border: 0;
+    padding: 15px 30px;
+    font-family: 'bitter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    transition: 0.5s ease all;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: none!important;
+}
+/* -- //ClaimBook --*/
+
+/*Testimonial*/
+.testimonials {
+    position: relative;
+    display: block;
+    padding: 50px 0;
+}
+.testimonial{
+    margin: 0 20px 40px;
+}
+.testimonial .testimonial-content{
+    padding: 25px 25px 25px 30px;
+    margin-bottom: 35px;
+    background: #fff;
+    position: relative;
+}
+/*.testimonial .testimonial-content:before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30PX;
+    border-top: 15px solid #ededed;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;            
+}        */
+.testimonial-content .testimonial-icon{
+    width: 50px;
+    height: 45px;
+    background: #0CCA4A;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -19px;
+}
+.testimonial-content .testimonial-icon:before{
+    content: "";
+    border-bottom: 16px solid #05A739;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -16px;
+    left: 1px;
+}
+.testimonial-content h6 {
+    font-family: 'Bitter', serif;
+    color: #376086;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.testimonial-person-info h3.title {
+    font-size: 14px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #e33e42;
+}
+.testimonial .description {
+    font-size: 14px; 
+    line-height: 26px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.testimonial .title{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #525252;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;    
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+}
+.owl-theme .owl-controls{
+    margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: #ccc;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #0CCA4A;
+}
+.testimonial-bottom img {
+    margin-right: 20px;
+}
+.testimonial-bottom {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.testimonial-content {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    margin-top: 20px;
+}
+.testimonial-content:after {
+    content: url(../images/down-arrow-testi.png);
+    position: absolute;
+    bottom: -25px;
+    left: 35px; 
+}
+/*-- // Testimonial --*/
+
+/*What you will learn*/
+.learn-content p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.learn-box img {
+    padding: 15px;
+}
+.learn {
+    background-color: #f2f2f2;
+    position: relative;
+    display: block;
+}
+/*-- // What you will learn --*/
+
+/* footer */
+footer {
+    background: #f2f2f2;
+}
+
+h2.logo a {
+    font-size: 1.4em;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.ft-menu li a {
+    font-size: 15px;
+    color: #333333;
+    line-height: 42px;
+    padding: 0px 15px;
+    border-right: 1px solid #333;
+}
+.ft-menu li:last-child a {
+    border: 0;
+}
+
+/* //footer */
+
+/* copyright */
+
+.copy_right {
+    background: #376086;
+}
+.copy_right p {
+    color: #fff;
+}
+.copy_right p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: 0;
+}
+/* //copyright */
+
+/*--/responsive--*/
+
+
+@media(max-width:1080px) {    
+    h1.logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    ul.menu li:nth-child(3) {
+        margin-right: 38%;
+    }
+
+    ul.menu li {
+        width: 10%;
+        text-align: center;
+    }
+}
+
+@media(max-width:992px) {
+
+    h1.logo {
+        position: static;
+        left: 0;
+        float: left;
+        transform: none;
+    }
+    nav ul li {
+        margin: 0px;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    ul.menu li {
+        width: 100%;
+        text-align: center;
+        padding: 8px 10px;
+    }
+    .top-ira {        
+        margin-bottom: 0px;
+    }
+    .claimBook {        
+        padding-top: 0px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner:after {display: none;}    
+    .claimBook {
+        background: #376086;
+    }
+    .claimBook .form {
+        margin-top: 50px;
+        margin-bottom: 50px;        
+    }
+    .top-ira {
+        background: #fff;
+        padding-bottom: 35px!important;
+        margin-bottom: 0px;
+    }
+    .learn-box {
+        text-align: center;
+    }
+    .ft-menu li a {        
+        padding: 0px 10px;
+    }
+}
+/*--//responsive--*/
